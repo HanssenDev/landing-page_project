@@ -5,7 +5,14 @@
 	box-sizing: border-box;
 }
 
+html {	
+	background-color: #aaa;
+	height: 100%;
+}
 
+body {
+	overflow-x: hidden;
+}
 
 #header {
 	position: fixed;
@@ -13,9 +20,10 @@
 	justify-content: space-around;
 	align-items: center;*/
 	padding: 0px 20px;
-	background-color: rgba(115, 114, 170, .70);
+	background-color: rgba(115, 114, 170, 1);
 	width: 100%;
 	border: 2px solid orange;
+	z-index: 999;
 
 }
 
@@ -47,63 +55,67 @@ nav ul {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-
 }
 
 .nav-link {
 	text-decoration: none;
-
+	color: #fff;
 }
 
 /*section styles start here*/
 
-
-
-
-.wrapper::after {
-	background-image: url('img/android-android-phone-communication-63690.jpg');
-	background-size: cover;
-	content: "";
-	opacity: 0.5;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	position: absolute;
-	z-index: -1;
-
+.wrapper {
+width: 100%;
 }
+
+h2 {
+	color: white;
+	text-align: center;
+	margin: auto;
+}
+
 
 #highlights {
 border: 2px solid orange;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-height: 60vh;
+height: 50vh;
+padding: 50px;
+position: relative;
+top: 12em;
+width: 100%;
 
 }
 
-#video {
+.video {
+display: block;
+position: absolute;
+object-position: right top;
+width: 100%;
+height: 100%;
+left: 35%;
+top: 25%;
 
 }
 
 #specification {
 text-align: center;
+position: relative;
+top: 12em;
 height: 60vh;
 border: 2px solid orange;
+width: 100%;
 }
 
 #specification h2 {
 	padding: 20px;
 	margin: 20px;
+
 }
 
 .specs {
 	line-height: 2em;
 	background-color: #666;
 	padding: 0px;
-	width: 10%;
+	margin: auto;
 
 }
 
@@ -112,7 +124,9 @@ border: 2px solid orange;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin: 10px;
+	border: 2px solid orange;
+	position: relative;
+	top: 12em;
 	
 }
 
@@ -132,8 +146,8 @@ border: 2px solid orange;
 	margin-bottom: 20px;
 }
 
-button {
+#submit {
 padding: 5px 10px;
 text-align: center;
-
+margin: auto;
 }
