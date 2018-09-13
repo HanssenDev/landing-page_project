@@ -1,17 +1,23 @@
 * {
 	margin: 0;
 	padding: 0;
-	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-family: Lato, "Helvetica Neue", Helvetica, sans-serif;
 	box-sizing: border-box;
 }
 
+
 html {	
-	background-color: #aaa;
+	background: linear-gradient(153deg,#5100cb 0,#6500fc 42%,#9617c9 75%,#d33092 100%) right bottom no-repeat fixed;
 	height: 100%;
 }
 
 body {
 	overflow-x: hidden;
+
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
 }
 
 #header {
@@ -20,18 +26,28 @@ body {
 	justify-content: space-around;
 	align-items: center;*/
 	padding: 0px 20px;
-	background-color: rgba(115, 114, 170, 1);
+	background-color: rgba(0,31,48,.05);
 	width: 100%;
 	border: 2px solid orange;
-	z-index: 999;
-
+	
 }
 
 #header-img {
-	padding: 20px 0px;
+	padding: 20px;
 	max-width: 100%;
 	display: block;
 	height: auto;
+
+}
+
+h1 {
+	display: inline-block;
+	position: absolute;
+	right: 60%;
+	top: 40%;
+	font-size: 4em;
+	color: #fff;
+	text-align: center;
 
 }
 
@@ -42,7 +58,6 @@ body {
 	justify-content: flex-end;
 	align-items: center;
 	height: 20px;
-	border: 2px solid orange;
 	top: 50%;
 	right: 0;
 	position: absolute;
@@ -60,6 +75,15 @@ nav ul {
 .nav-link {
 	text-decoration: none;
 	color: #fff;
+	font-size: 1.25em;
+	/*border: 2px solid #07ba9b !important;*/
+	padding: .5em .8em;
+    font-weight: normal;
+    border-radius: 10em
+}
+
+.nav-link:hover {
+	color: #07ba9b;
 }
 
 /*section styles start here*/
@@ -69,9 +93,11 @@ width: 100%;
 }
 
 h2 {
-	color: white;
+	color: #fff;
 	text-align: center;
 	margin: auto;
+	font-size: 2.3em;
+	position: relative;
 }
 
 
@@ -80,6 +106,7 @@ border: 2px solid orange;
 height: 50vh;
 padding: 50px;
 position: relative;
+display: block;
 top: 12em;
 width: 100%;
 
@@ -99,6 +126,7 @@ top: 25%;
 #specification {
 text-align: center;
 position: relative;
+display: block;
 top: 12em;
 height: 60vh;
 border: 2px solid orange;
@@ -127,6 +155,7 @@ width: 100%;
 	border: 2px solid orange;
 	position: relative;
 	top: 12em;
+
 	
 }
 
@@ -149,5 +178,5 @@ width: 100%;
 #submit {
 padding: 5px 10px;
 text-align: center;
-margin: auto;
+margin: 0 0 40px 3.5em;
 }
