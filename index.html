@@ -7,6 +7,46 @@
 	<link rel="stylesheet" href="style.css">
 	<style>
 @import url('https://fonts.googleapis.com/css?family=Lato:700');
+#nav-bar {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 20px;
+	top: 50%;
+	right: 0;
+	position: absolute;
+	padding: 30px;
+}
+@media(max-width: 414px) {
+	nav ul {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 10px;
+		margin-top: -50px;
+	}
+
+	.container h1 {
+		display: none;
+	}
+
+	iframe {
+		margin-top: 30px;
+	}
+
+	.specs ul {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		line-height: 1.7em;
+		grid-gap: 20px;
+		justify-items: start;
+	}
+
+	.specs img {
+		display: none;
+
+	}
+}
+
 </style>
 </head>
 
@@ -43,6 +83,7 @@
 					<li>16 + 20 MP Dual Camera</li>
 					<li>Up to 8GB RAM</li>
 					<li>256 GB Storage</li>
+					<li>177g Weight</li>
 					
 				</ul>
 				<img src="https://i-cdn.phonearena.com//images/article/105183-two_lead/OnePlus-6-battery-life-test-results-above-average.jpg" alt="OnePlus phone">	
