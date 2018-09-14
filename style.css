@@ -7,7 +7,7 @@
 
 
 html {	
-	background: linear-gradient(153deg,#5100cb 0,#6500fc 42%,#9617c9 75%,#d33092 100%) right bottom no-repeat fixed;
+	background: linear-gradient(153deg,#5100cb 0,#6500fc 25%,#9617c9 75%,#d33092 100%) right bottom no-repeat fixed;
 	height: 100%;
 }
 
@@ -22,13 +22,9 @@ body {
 
 #header {
 	position: fixed;
-	/*display: flex;
-	justify-content: space-around;
-	align-items: center;*/
 	padding: 0px 20px;
 	background-color: rgba(0,31,48,.05);
 	width: 100%;
-	border: 2px solid orange;
 	
 }
 
@@ -102,7 +98,7 @@ h2 {
 
 
 #highlights {
-border: 2px solid orange;
+border-top: 2px solid #b19cd9;
 height: 50vh;
 padding: 50px;
 position: relative;
@@ -129,7 +125,7 @@ position: relative;
 display: block;
 top: 12em;
 height: 60vh;
-border: 2px solid orange;
+border-top: 2px solid #b19cd9;
 width: 100%;
 }
 
@@ -140,10 +136,25 @@ width: 100%;
 }
 
 .specs {
-	line-height: 2em;
-	background-color: #666;
-	padding: 0px;
+	padding: 0;
+	max-width: 50%;
 	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	font-size: 1.2em;
+	
+}
+
+.specs ul {
+	list-style: none;
+	line-height: 3em;
+	color: #fff;
+}
+
+img {
+	display: block;
+	height: auto;
+	max-width: 100%;
 
 }
 
@@ -152,7 +163,7 @@ width: 100%;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	border: 2px solid orange;
+	border-top: 2px solid #b19cd9;
 	position: relative;
 	top: 12em;
 
@@ -179,4 +190,9 @@ width: 100%;
 padding: 5px 10px;
 text-align: center;
 margin: 0 0 40px 3.5em;
+}
+
+
+#footer {
+	
 }
